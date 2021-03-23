@@ -1,0 +1,4703 @@
+[
+    {
+        "routine_id": 1,
+        "routine_name": "TASK_MANAGER_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\DisableTaskMgr",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\DisableTaskMgr",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 2,
+        "routine_name": "SMART_CARD_SERVICE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\SCardSvr\\Start",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\SCardSvr\\Start",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 3,
+        "routine_name": "TELNET_SERVICE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\TlntSvr\\Start",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\TlntSvr\\Start",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 4,
+        "routine_name": "AUTOLOGIN_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\AutoAdminLogon",
+                "registry_type": 2,
+                "registry_value_good": "0",
+                "registry_value_bad": "1",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\AutoAdminLogon",
+                "registry_type": 2,
+                "registry_value_good": "0",
+                "registry_value_bad": "1",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 5,
+        "routine_name": "SECURE_LOGON_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\DisableCAD",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\DisableCAD",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 6,
+        "routine_name": "UAC_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 7,
+        "routine_name": "UAC_INSECURE",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\PromptOnSecureDesktop",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin",
+                "registry_type": 4,
+                "registry_value_good": 5,
+                "registry_value_bad": 3,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\PromptOnSecureDesktop",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin",
+                "registry_type": 4,
+                "registry_value_good": 5,
+                "registry_value_bad": 3,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 8,
+        "routine_name": "AUTO_UPDATES_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU\\NoAutoUpdate",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU\\NoAutoUpdate",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 9,
+        "routine_name": "LM_HASH_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\NoLMHash",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\NoLMHash",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 10,
+        "routine_name": "BLANK_PASSWORDS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\LimitBlankPasswordUse",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\LimitBlankPasswordUse",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 11,
+        "routine_name": "ANONYMOUS_SAM_ENUMERATION_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\restrictanonymoussam",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\restrictanonymoussam",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 12,
+        "routine_name": "PRINTER_INSTALLATION_KERNEL_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Printers\\KMPrintersAreBlocked",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Printers\\KMPrintersAreBlocked",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 13,
+        "routine_name": "WINDOWS_BACKUP_SERVICE_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\SDRSVC\\Start",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 4,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\SDRSVC\\Start",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 4,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 15,
+        "routine_name": "TELEPHONY_SERVICE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\TapiSrv\\Start",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\TapiSrv\\Start",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 16,
+        "routine_name": "LOCKSCREEN_NOTIFICATIONS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System\\DisableLockScreenAppNotifications",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System\\DisableLockScreenAppNotifications",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 19,
+        "routine_name": "STORE_DOM_CREDENTIALS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\disabledomaincreds",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 20,
+        "routine_name": "NETLOGON_REQUIRE_SIGN_OR_SEAL_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\Netlogon\\Parameters\\RequireSignOrSeal",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\Netlogon\\Parameters\\RequireSignOrSeal",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 21,
+        "routine_name": "NETLOGON_SEAL_SECURE_CHANNEL_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\Netlogon\\Parameters\\SealSecureChannel",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\Netlogon\\Parameters\\SealSecureChannel",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 22,
+        "routine_name": "NETLOGON_SIGN_SECURE_CHANNEL_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\Netlogon\\Parameters\\SignSecureChannel",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\Netlogon\\Parameters\\SignSecureChannel",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 23,
+        "routine_name": "NETLOGON_DISABLE_PASSWORD_CHANGE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\Netlogon\\Parameters\\DisablePasswordChange",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\Netlogon\\Parameters\\DisablePasswordChange",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 24,
+        "routine_name": "NETLOGON_REQUIRE_STRONG_KEY_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\Netlogon\\Parameters\\RequireStrongKey",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\Netlogon\\Parameters\\RequireStrongKey",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 25,
+        "routine_name": "INSECURE_GUEST_LOGON_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\LanManWorkstation\\AllowInsecureGuestAuth",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "version": "10",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\LanManWorkstation\\AllowInsecureGuestAuth",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "version": "10",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 26,
+        "routine_name": "NO_LOCKSCREEN_CAMERA_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Personalization\\NoLockScreenCamera",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8.1",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Personalization\\NoLockScreenCamera",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8.1",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 27,
+        "routine_name": "NO_LOCKSCREEN_SLIDESHOW_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Personalization\\NoLockScreenSlideshow",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8.1",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Personalization\\NoLockScreenSlideshow",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8.1",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 28,
+        "routine_name": "LANMAN_WORKSTATION_REQUIRE_SEC_SIGN_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\LanmanWorkstation\\Parameters\\RequireSecuritySignature",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\LanmanWorkstation\\Parameters\\RequireSecuritySignature",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 29,
+        "routine_name": "LANMAN_WORKSTATION_PLAIN_TEXT_PASSWORD_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\LanmanWorkstation\\Parameters\\EnablePlainTextPassword",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\LanmanWorkstation\\Parameters\\EnablePlainTextPassword",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 30,
+        "routine_name": "LANMAN_SERVER_REQUIRE_SEC_SIGN_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\LanmanServer\\Parameters\\requiresecuritysignature",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\LanmanServer\\Parameters\\requiresecuritysignature",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 31,
+        "routine_name": "PRINTERS_DRIVERS_HTTP_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\Printers\\DisableWebPnPDownload",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 32,
+        "routine_name": "PRINTERS_PRINT_OVER_HTTP_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\Printers\\DisableHTTPPrinting",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 33,
+        "routine_name": "SESSION_MANAGER_PROTECTION_MODE_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\ProtectionMode",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\ProtectionMode",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 34,
+        "routine_name": "SYSTEM_LOGON_ENUMERATE_LOCAL_USERS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System\\EnumerateLocalUsers",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "version": "8",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System\\EnumerateLocalUsers",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "version": "8",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 35,
+        "routine_name": "SYSTEM_LOGON_ALLOW_DOMAIN_PIN_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System\\AllowDomainPINLogon",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "version": "8",
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 36,
+        "routine_name": "RPC_RESTRICT_CLIENTS_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Rpc\\RestrictRemoteClients",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Rpc\\RestrictRemoteClients",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 37,
+        "routine_name": "MICROSOFT_ACCOUNT_OPTIONAL_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\MSAOptional",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8.1",
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 38,
+        "routine_name": "NO_AUTORUN_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoAutorun",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoAutorun",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 39,
+        "routine_name": "ALL_DRIVES_NO_AUTORUN_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoDriveTypeAutoRun",
+                "registry_type": 4,
+                "registry_value_good": 255,
+                "registry_value_bad": 145,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoDriveTypeAutoRun",
+                "registry_type": 4,
+                "registry_value_good": 255,
+                "registry_value_bad": 145,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 40,
+        "routine_name": "FVE_DISABLE_EXTERNAL_DMA_UNDERLOCK_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\FVE\\DisableExternalDMAUnderLock",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "1703",
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 41,
+        "routine_name": "FVE_USE_ENHANCED_PIN_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\FVE\\UseEnhancedPin",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 42,
+        "routine_name": "FVE_OS_ALLOW_SECURE_BOOT_INTEGRITY_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\FVE\\OSAllowSecureBootForIntegrity",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\FVE\\OSAllowSecureBootForIntegrity",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 43,
+        "routine_name": "RDV_DENY_WRITE_ACCESS_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Policies\\Microsoft\\FVE\\RDVDenyWriteAccess",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 44,
+        "routine_name": "MICROSOFT_CONSUMER_EXPERIENCE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CloudContent\\DisableWindowsConsumerFeatures",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 45,
+        "routine_name": "ENUMERATE_ADMINS_ON_ELEVATION_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\CredUI\\EnumerateAdministrators",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 46,
+        "routine_name": "WINDOWS_SMART_SCREEN_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System\\EnableSmartScreen",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System\\ShellSmartScreenLevel",
+                "registry_type": 2,
+                "registry_value_good": "Block",
+                "registry_value_bad": "Allow",
+                "version": "8",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System\\EnableSmartScreen",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System\\ShellSmartScreenLevel",
+                "registry_type": 2,
+                "registry_value_good": "Block",
+                "registry_value_bad": "Allow",
+                "version": "8",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 47,
+        "routine_name": "PROHIBIT_INTERNET_CONNECTION_SHARING_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Network Connections\\NC_ShowSharedAccessUI",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 48,
+        "routine_name": "ALLOW_CONNECT_OPEN_HOTSPOTS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\wcmsvc\\wifinetworkmanager\\config\\AutoConnectAllowedOEM",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "version": "10",
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 49,
+        "routine_name": "CONNECTION_NON_DOMAIN_NETWORKS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WcmSvc\\GroupPolicy\\fBlockNonDomain",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "8",
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 50,
+        "routine_name": "ALLOW_DELEGATION_NON_EXPORTABLE_CREDENTIALS_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CredentialsDelegation\\AllowProtectedCreds",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "1703",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CredentialsDelegation\\AllowProtectedCreds",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "1703",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 51,
+        "routine_name": "DEVICE_GUARD_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeviceGuard\\EnableVirtualizationBasedSecurity",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "10",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeviceGuard\\EnableVirtualizationBasedSecurity",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "10",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 52,
+        "routine_name": "DENY_DEVICE_IDS_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceInstall\\Restrictions\\DenyDeviceIDs",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 53,
+        "routine_name": "DENY_DEVICE_CLASSES_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceInstall\\Restrictions\\DenyDeviceClasses",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 54,
+        "routine_name": "DRIVER_LOAD_POLICY_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Policies\\EarlyLaunch\\DriverLoadPolicy",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": "",
+                "version": "8",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Policies\\EarlyLaunch\\DriverLoadPolicy",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": "",
+                "version": "8",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 55,
+        "routine_name": "ANTI_SPOOFING_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Biometrics\\FacialFeatures\\EnhancedAntiSpoofing",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "10",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Biometrics\\FacialFeatures\\EnhancedAntiSpoofing",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "10",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 56,
+        "routine_name": "FVE_MINIMUM_PIN_LESS_DIGITS",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\FVE\\MinimumPIN",
+                "registry_type": 4,
+                "registry_value_good": 7,
+                "registry_value_bad": 3,
+                "version": "10",
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 57,
+        "routine_name": "TURN_OFF_DATA_EXEC_PREVENTION_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Explorer\\NoDataExecutionPrevention",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Explorer\\NoDataExecutionPrevention",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 58,
+        "routine_name": "TURN_OFF_HEAP_TERM_ON_CORRUPTION_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Explorer\\NoHeapTerminationOnCorruption",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Explorer\\NoHeapTerminationOnCorruption",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 59,
+        "routine_name": "MICROSOFT_EDGE_FORM_SUGGEST_PASSWORDS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main\\FormSuggest Passwords",
+                "registry_type": 2,
+                "registry_value_good": "no",
+                "registry_value_bad": "yes",
+                "version": "10",
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 60,
+        "routine_name": "MICROSOFT_EDGE_ENABLED_V9_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter\\EnabledV9",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "10",
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 61,
+        "routine_name": "MICROSOFT_EDGE_PREVENT_OVERRIDE_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter\\PreventOverride",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false,
+                "version": "1511"
+            }
+        ]
+    },
+    {
+        "routine_id": 62,
+        "routine_name": "MICROSOFT_EDGE_PREVENT_OVERRIDE_APP_REP_UNKNOWN",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter\\PreventOverrideAppRepUnknown",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false,
+                "vesion": "1511"
+            }
+        ]
+    },
+    {
+        "routine_id": 63,
+        "routine_name": "RDP_SAVING_PASSWORDS_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\DisablePasswordSaving",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\DisablePasswordSaving",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 64,
+        "routine_name": "RDP_ALLOW_DRIVE_REDIRECTION_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\fDisableCdm",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\fDisableCdm",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 65,
+        "routine_name": "RDP_PROMPT_FOR_PASSWORD_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\fPromptForPassword",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\fPromptForPassword",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 66,
+        "routine_name": "RPC_ENCRYPT_TRAFFIC_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\fEncryptRPCTraffic",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\fEncryptRPCTraffic",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 67,
+        "routine_name": "RDP_ENCRYPTION_LEVEL_LOW",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\MinEncryptionLevel",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\MinEncryptionLevel",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 68,
+        "routine_name": "INTERNET_EXPLORER_ENCLOSURE_DOWNLOAD_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Feeds\\DisableEnclosureDownload",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Feeds\\DisableEnclosureDownload",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 69,
+        "routine_name": "ALLOW_INDEXING_ENCRYPTED_FILES_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search\\AllowIndexingEncryptedStoresOrItems",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search\\AllowIndexingEncryptedStoresOrItems",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 70,
+        "routine_name": "PREVENT_USERS_MODIF_SETTINGS_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender Security Center\\App and Browser protection\\DisallowExploitProtectionOverride",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "1709",
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 71,
+        "routine_name": "GAME_RECORDING_AND_BROADCASTING_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\GameDVR\\AllowGameDVR",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "version": "10",
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 72,
+        "routine_name": "ALLOW_WINDOWS_INK_WORKSPACE_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsInkWorkspace\\AllowWindowsInkWorkspace",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "1607",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsInkWorkspace\\AllowWindowsInkWorkspace",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "version": "1607",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 73,
+        "routine_name": "ALLOW_USER_CONTROL_OVER_INSTALLS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Installer\\EnableUserControl",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Installer\\EnableUserControl",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 74,
+        "routine_name": "ALWAYS_INSTALL_WITH_ELEVATED_PRIVILEGES_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Installer\\AlwaysInstallElevated",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Installer\\AlwaysInstallElevated",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 75,
+        "routine_name": "AUTOMATIC_RESTART_SIGN_ON_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\DisableAutomaticRestartSignOn",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\DisableAutomaticRestartSignOn",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 76,
+        "routine_name": "POWERSHELL_SCRIPT_BLOCK_LOGGING_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\PowerShell\\ScriptBlockLogging\\EnableScriptBlockLogging",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\PowerShell\\ScriptBlockLogging\\EnableScriptBlockLogging",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 77,
+        "routine_name": "WIN_RM_CLIENT_BASIC_AUTH_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Client\\AllowBasic",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Client\\AllowBasic",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 78,
+        "routine_name": "WIN_RM_CLIENT_UNENCRYPTED_MESSAGES_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Client\\AllowUnencryptedTraffic",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Client\\AllowUnencryptedTraffic",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 79,
+        "routine_name": "WIN_RM_CLIENT_DIGEST_AUTH_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Client\\AllowDigest",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Client\\AllowDigest",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 80,
+        "routine_name": "WIN_RM_SERVICE_BASIC_AUTH_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Service\\AllowBasic",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Service\\AllowBasic",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 81,
+        "routine_name": "WIN_RM_SERVICE_UNENCRYPTED_MESSAGES_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Service\\AllowUnencryptedTraffic",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Service\\AllowUnencryptedTraffic",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 82,
+        "routine_name": "WIN_RM_SERVICE_DISALLOW_STORING_RUN_AS_CREDENTIALS_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Service\\DisableRunAs",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Service\\DisableRunAs",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 83,
+        "routine_name": "INTERNET_EXPLORER_PREVENT_ACTIVE_X_INSTALL_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Security\\ActiveX\\BlockNonAdminActiveXInstall",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Security\\ActiveX\\BlockNonAdminActiveXInstall",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 84,
+        "routine_name": "INTERNET_SETTINGS_SECURITY_ZONES_MAP_EDIT_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Security_zones_map_edit",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Security_zones_map_edit",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 85,
+        "routine_name": "INTERNET_SETTINGS_SECURITY_OPTIONS_EDIT_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Security_options_edit",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Security_options_edit",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 86,
+        "routine_name": "INTERNET_SETTINGS_SECURITY_HKLM_ONLY_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Security_HKLM_only",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Security_HKLM_only",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 87,
+        "routine_name": "ACTIVE_X_CONTROLS_INSTALL_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AxInstaller\\OnlyUseAXISForActiveXInstall",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AxInstaller\\OnlyUseAXISForActiveXInstall",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 88,
+        "routine_name": "INTERNET_EXPLORER_TURN_OFF_CRASH_DETECTION_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Restrictions\\NoCrashDetection",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Restrictions\\NoCrashDetection",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 89,
+        "routine_name": "INTERNET_EXPLORER_SECURITY_SETTINGS_CHECK_FEATURE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Security\\DisableSecuritySettingsCheck",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Security\\DisableSecuritySettingsCheck",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 90,
+        "routine_name": "INTERNET_SETTINGS_PREVENT_IGNORING_CERTIFICATE_ERRORS_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\PreventIgnoreCertErrors",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\PreventIgnoreCertErrors",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 91,
+        "routine_name": "INTERNET_EXPLORER_RUN_INVALID_SIGNATURES_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Download\\RunInvalidSignatures",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Download\\RunInvalidSignatures",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 92,
+        "routine_name": "INTERNET_SETTINGS_CHECK_FOR_SERVER_CERTIFICATE_REVOCATION_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\CertificateRevocation",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\CertificateRevocation",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 93,
+        "routine_name": "INTERNET_EXPLORER_CHECK_DIGITAL_SIGNATURES_OF_EXECUTABLE_PROGRAMS_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Download\\CheckExeSignatures",
+                "registry_type": 2,
+                "registry_value_good": "yes",
+                "registry_value_bad": "no",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Download\\CheckExeSignatures",
+                "registry_type": 2,
+                "registry_value_good": "yes",
+                "registry_value_bad": "no",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 94,
+        "routine_name": "INTERNET_EXPLORER_RUN_ACTIVE_X_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\DisableEPMCompat",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\DisableEPMCompat",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 95,
+        "routine_name": "INTERNET_SETTINGS_ENCRYPTION_SUPPORT_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\SecureProtocols",
+                "registry_type": 4,
+                "registry_value_good": 2560,
+                "registry_value_bad": 8,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\SecureProtocols",
+                "registry_type": 4,
+                "registry_value_good": 2560,
+                "registry_value_bad": 8,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 96,
+        "routine_name": "INTERNET_EXPLORER_64_BIT_TAB_PROCESSES_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\Isolation64Bit",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\Isolation64Bit",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 97,
+        "routine_name": "INTERNET_EXPLORER_ENHANCED_PROTECTED_MODE_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\Isolation",
+                "registry_type": 2,
+                "registry_value_good": "PMEM",
+                "registry_value_bad": "PMIL",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\Isolation",
+                "registry_type": 2,
+                "registry_value_good": "PMEM",
+                "registry_value_bad": "PMIL",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 98,
+        "routine_name": "INTERNET_SETTINGS_UNCS_INTRANET_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\UNCAsIntranet",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\UNCAsIntranet",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 99,
+        "routine_name": "INTERNET_SETTINGS_BAD_CERT_RECVING_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\WarnOnBadCertRecving",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\WarnOnBadCertRecving",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 100,
+        "routine_name": "INTERNET_SETTINGS_ACC_DATA_SOURCES_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1406",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1406",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 101,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_CUT_COPY_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1407",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1407",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 102,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_DRAG_DROP_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1802",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1802",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 103,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_XAML_FILES_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2402",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2402",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 104,
+        "routine_name": "INTERNET_SETTINGS_USE_ACTIVE_X_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\120b",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\120b",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 105,
+        "routine_name": "INTERNET_SETTINGS_USE_TDC_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\120c",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false,
+                "version": "1607"
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\120c",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true,
+                "version": "1607"
+            }
+        ]
+    },
+    {
+        "routine_id": 106,
+        "routine_name": "INTERNET_SETTINGS_SCRIPTING_WEB_BROWSER_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1206",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1206",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 107,
+        "routine_name": "INTERNET_SETTINGS_SCRIPT_INIT_WINDOWS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2102",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2102",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 108,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_SCRIPTLETS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1209",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1209",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 109,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_UPDATED_STATUS_BAR_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2103",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2103",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 110,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_VB_SCRIPT_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\140C",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\140C",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 111,
+        "routine_name": "INTERNET_SETTINGS_PROMPTING_FILE_DOWNLOAD_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2200",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2200",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 112,
+        "routine_name": "INTERNET_SETTINGS_RUN_AV_AGAINST_ACTIVE_X_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\270C",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 4,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\270C",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 4,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 113,
+        "routine_name": "INTERNET_SETTINGS_DOWNLOAD_SIGN_ACTIVE_X_CONTROLS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1001",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1001",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 114,
+        "routine_name": "INTERNET_SETTINGS_DOWNLOAD_UNSIGN_ACTIVE_X_CONTROLS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1004",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1004",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 115,
+        "routine_name": "INTERNET_SETTINGS_CONTENT_ACROSS_WINDOWS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2709",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2709",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 116,
+        "routine_name": "INTERNET_SETTINGS_CONTENT_WITHIN_WINDOWS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2708",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2708",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 117,
+        "routine_name": "INTERNET_SETTINGS_UPLOAD_FILES_TO_SERVER_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\160A",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\160A",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 118,
+        "routine_name": "INTERNET_SETTINGS_ACTIVE_X_MARKED_NOT_SAFE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1201",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1201",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 119,
+        "routine_name": "INTERNET_SETTINGS_JAVA_PERMISSIONS_ZONE_3_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 120,
+        "routine_name": "INTERNET_SETTINGS_LAUNCH_APP_AND_FILES_IFRAME_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1804",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1804",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 121,
+        "routine_name": "INTERNET_SETTINGS_LOGON_OPTIONS",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1A00",
+                "registry_type": 4,
+                "registry_value_good": 65536,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1A00",
+                "registry_type": 4,
+                "registry_value_good": 65536,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 122,
+        "routine_name": "INTERNET_SETTINGS_NAVIGATE_WINDOWS_ACROSS_DOMAINS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1607",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1607",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 123,
+        "routine_name": "INTERNET_SETTINGS_RUN_DOT_NET_NOT_SIGNED_WITH_AUTHENTICODE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2004",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2004",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 124,
+        "routine_name": "INTERNET_SETTINGS_RUN_DOT_NET_SIGNED_WITH_AUTHENTICODE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2001",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2001",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 125,
+        "routine_name": "INTERNET_SETTINGS_SECURITY_WARNING_FOR_UNSAFE_FILES",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1806",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1806",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 126,
+        "routine_name": "INTERNET_SETTINGS_CROSS_SITE_SCRIPTING_FILTER_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1409",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1409",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 127,
+        "routine_name": "INTERNET_SETTINGS_PROTECTED_MODE_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2500",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2500",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 128,
+        "routine_name": "INTERNET_SETTINGS_SMART_SCREEN_FILTER_SCAN_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2301",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2301",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 129,
+        "routine_name": "INTERNET_SETTINGS_USE_POP_UP_BLOCKER_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1809",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1809",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 130,
+        "routine_name": "INTERNET_SETTINGS_USERDATA_PERSISTENCE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1606",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1606",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 131,
+        "routine_name": "INTERNET_SETTINGS_LESS_PRIVILEGED_WEB_CONTENT_ZONES_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2101",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2101",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 132,
+        "routine_name": "INTERNET_SETTINGS_RUN_AV_ACTIVE_X_CONTROLS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1\\270C",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1\\270C",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 133,
+        "routine_name": "INTERNET_SETTINGS_ACTIVE_X_MARK_NOT_SAFE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1\\1201",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1\\1201",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 134,
+        "routine_name": "INTERNET_SETTINGS_JAVA_PERMISSIONS_ZONE_1",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 65536,
+                "registry_value_bad": 196608,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 65536,
+                "registry_value_bad": 196608,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 135,
+        "routine_name": "INTERNET_SETTINGS_RUN_AV_ACTIVE_X_CONTROLS_ZONE_0_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0\\270C",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0\\270C",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 136,
+        "routine_name": "INTERNET_SETTINGS_JAVA_PERMISSIONS_ZONE_0_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 137,
+        "routine_name": "INTERNET_SETTINGS_SMART_SCREEN_FILTER_SCAN_3_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\3\\2301",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\3\\2301",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 138,
+        "routine_name": "INTERNET_SETTINGS_JAVA_PERMISSIONS_LOCK_ZONE_1_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\1\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\1\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 139,
+        "routine_name": "INTERNET_SETTINGS_JAVA_PERMISSIONS_LOCK_ZONE_0_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\0\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\0\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 140,
+        "routine_name": "INTERNET_SETTINGS_JAVA_PERMISSIONS_LOCK_ZONE_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 141,
+        "routine_name": "INTERNET_SETTINGS_SMART_SCREEN_FILTER_SCAN_LOCK_4_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4\\2301",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4\\2301",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 142,
+        "routine_name": "INTERNET_SETTINGS_JAVA_PERMISSIONS_LOCK_ZONE_2_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\2\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 65536,
+                "registry_value_bad": 196608,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\2\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 65536,
+                "registry_value_bad": 196608,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 143,
+        "routine_name": "INTERNET_SETTINGS_ACC_DATA_SOURCES_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1406",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1406",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 144,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_ACTIVE_SCRIPTING_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1400",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1400",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 145,
+        "routine_name": "INTERNET_SETTINGS_SCRIPT_BEHAVIORS_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2000",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2000",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 146,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_CUT_COPY_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1407",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1407",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 147,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_DRAG_DROP_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1802",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1802",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 148,
+        "routine_name": "INTERNET_SETTINGS_DOWNLOAD_FILES_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1803",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1803",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 149,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_XAML_FILES_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2402",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2402",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 150,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_META_REFRESH_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1608",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1608",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 151,
+        "routine_name": "INTERNET_SETTINGS_USE_ACTIVE_X_4_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\120b",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\120b",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 152,
+        "routine_name": "INTERNET_SETTINGS_USE_TDC_4_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\120c",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false,
+                "version": "1607"
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\120c",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true,
+                "version": "1607"
+            }
+        ]
+    },
+    {
+        "routine_id": 153,
+        "routine_name": "INTERNET_SETTINGS_SCRIPTING_WEB_BROWSER_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1206",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1206",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 154,
+        "routine_name": "INTERNET_SETTINGS_SCRIPT_INIT_WINDOWS_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2102",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2102",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 155,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_SCRIPTLETS_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1209",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1209",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 156,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_UPDATED_STATUS_BAR_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2103",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2103",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 157,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_VB_SCRIPT_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\140C",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\140C",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 158,
+        "routine_name": "INTERNET_SETTINGS_PROMPTING_FILE_DOWNLOAD_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2200",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2200",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 159,
+        "routine_name": "INTERNET_SETTINGS_RUN_AV_AGAINST_ACTIVE_X_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\270C",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\270C",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 160,
+        "routine_name": "INTERNET_SETTINGS_DOWNLOAD_SIGN_ACTIVE_X_CONTROLS_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1001",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1001",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 161,
+        "routine_name": "INTERNET_SETTINGS_DOWNLOAD_UNSIGN_ACTIVE_X_CONTROLS_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1004",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1004",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 162,
+        "routine_name": "INTERNET_SETTINGS_CONTENT_ACROSS_WINDOWS_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2709",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2709",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 163,
+        "routine_name": "INTERNET_SETTINGS_CONTENT_WITHIN_WINDOWS_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2708",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2708",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 164,
+        "routine_name": "INTERNET_SETTINGS_UPLOAD_FILES_TO_SERVER_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\160A",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\160A",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 165,
+        "routine_name": "INTERNET_SETTINGS_ACTIVE_X_MARKED_NOT_SAFE_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1201",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1201",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 166,
+        "routine_name": "INTERNET_SETTINGS_JAVA_PERMISSIONS_ZONE_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 167,
+        "routine_name": "INTERNET_SETTINGS_LAUNCH_APP__AND_FILES_IFRAME_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1804",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1804",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 168,
+        "routine_name": "INTERNET_SETTINGS_LOGON_OPTIONS_4",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1A00",
+                "registry_type": 4,
+                "registry_value_good": 196608,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1A00",
+                "registry_type": 4,
+                "registry_value_good": 196608,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 169,
+        "routine_name": "INTERNET_SETTINGS_NAVIGATE_WINDOWS_ACROSS_DOMAINS_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1607",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1607",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 170,
+        "routine_name": "INTERNET_SETTINGS_RUN_DOT_NET_NOT_SIGNED_WITH_AUTHENTICODE_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2004",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2004",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 171,
+        "routine_name": "INTERNET_SETTINGS_RUN_DOT_NET_SIGNED_WITH_AUTHENTICODE_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2001",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2001",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 172,
+        "routine_name": "INTERNET_SETTINGS_RUN_ACTIVE_X_CONTROLS_AND_PLUGINS_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1200",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1200",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 173,
+        "routine_name": "INTERNET_SETTINGS_SCRIPT_ACTIVE_X_MARKED_SAFE_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1405",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1405",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 174,
+        "routine_name": "INTERNET_SETTINGS_JAVA_APPLETS_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1402",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1402",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 175,
+        "routine_name": "INTERNET_SETTINGS_SECURITY_WARNING_FOR_UNSAFE_FILES_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1806",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1806",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 176,
+        "routine_name": "INTERNET_SETTINGS_CROSS_SITE_SCRIPTING_FILTER_4_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1409",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1409",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 177,
+        "routine_name": "INTERNET_SETTINGS_PROTECTED_MODE_4_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2500",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2500",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 178,
+        "routine_name": "INTERNET_SETTINGS_SMART_SCREEN_FILTER_SCAN_4_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2301",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2301",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 179,
+        "routine_name": "INTERNET_SETTINGS_USE_POP_UP_BLOCKER_4_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1809",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1809",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 180,
+        "routine_name": "INTERNET_SETTINGS_USERDATA_PERSISTENCE_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1606",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\1606",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 181,
+        "routine_name": "INTERNET_SETTINGS_LESS_PRIVILEGED_WEB_CONTENT_ZONES_4_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2101",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4\\2101",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 182,
+        "routine_name": "INTERNET_SETTINGS_RUN_AV_ACTIVE_X_CONTROLS_2_ENABLED26",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2\\270C",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2\\270C",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 183,
+        "routine_name": "INTERNET_SETTINGS_ACTIVE_X_MARK_NOT_SAFE_2_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2\\1201",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2\\1201",
+                "registry_type": 4,
+                "registry_value_good": 3,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 184,
+        "routine_name": "INTERNET_SETTINGS_JAVA_PERMISSIONS_ZONE_2",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 65536,
+                "registry_value_bad": 196608,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2\\1C00",
+                "registry_type": 4,
+                "registry_value_good": 65536,
+                "registry_value_bad": 196608,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 185,
+        "routine_name": "INTERNET_SETTINGS_ALLOW_FALBACK_SSL_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\EnableSSL3Fallback",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\EnableSSL3Fallback",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 186,
+        "routine_name": "INTERNET_EXPLORER_REMOVE_RUN_THIS_TIME_BUTTON_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Ext\\RunThisTimeEnabled",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Ext\\RunThisTimeEnabled",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 187,
+        "routine_name": "INTERNET_EXPLORER_BLOCK_ACTIVE_X_CONTROLS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Ext\\VersionCheckEnabled",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Ext\\VersionCheckEnabled",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 188,
+        "routine_name": "INTERNET_EXPLORER_PROCESSES_HANDLING_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_HANDLING\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_HANDLING\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_HANDLING\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_HANDLING\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_HANDLING\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_HANDLING\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 189,
+        "routine_name": "INTERNET_EXPLORER_PROCESSES_SNIFFING_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_SNIFFING\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_SNIFFING\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_SNIFFING\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_SNIFFING\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_SNIFFING\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_SNIFFING\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 190,
+        "routine_name": "INTERNET_EXPLORER_PROCESSES_MK_PROTOCOL_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_DISABLE_MK_PROTOCOL\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_DISABLE_MK_PROTOCOL\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_DISABLE_MK_PROTOCOL\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_DISABLE_MK_PROTOCOL\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_DISABLE_MK_PROTOCOL\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_DISABLE_MK_PROTOCOL\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 191,
+        "routine_name": "INTERNET_EXPLORER_PROCESSES_SECURITY_BAND_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_SECURITYBAND\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_SECURITYBAND\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_SECURITYBAND\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_SECURITYBAND\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_SECURITYBAND\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_SECURITYBAND\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 192,
+        "routine_name": "INTERNET_EXPLORER_PROCESSES_ZONE_ELEVATION_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_ZONE_ELEVATION\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_ZONE_ELEVATION\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_ZONE_ELEVATION\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_ZONE_ELEVATION\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_ZONE_ELEVATION\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_ZONE_ELEVATION\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 193,
+        "routine_name": "INTERNET_EXPLORER_PROCESSES_RESTRICT_ACTIVE_X_INSTALL_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_ACTIVEXINSTALL\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_ACTIVEXINSTALL\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_ACTIVEXINSTALL\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_ACTIVEXINSTALL\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_ACTIVEXINSTALL\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_ACTIVEXINSTALL\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 194,
+        "routine_name": "INTERNET_EXPLORER_PROCESSES_RESTRICT_FILE_DOWNLOAD_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_FILEDOWNLOAD\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_FILEDOWNLOAD\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_FILEDOWNLOAD\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_FILEDOWNLOAD\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_FILEDOWNLOAD\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_FILEDOWNLOAD\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 195,
+        "routine_name": "INTERNET_EXPLORER_PROCESSES_WINDOWS_RESTRICTIONS_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_WINDOW_RESTRICTIONS\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_WINDOW_RESTRICTIONS\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_WINDOW_RESTRICTIONS\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_WINDOW_RESTRICTIONS\\(Reserved)",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_WINDOW_RESTRICTIONS\\explorer.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_WINDOW_RESTRICTIONS\\iexplore.exe",
+                "registry_type": 2,
+                "registry_value_good": "1",
+                "registry_value_bad": "0",
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 196,
+        "routine_name": "LOCAL_ADMIN_PASSWORD_MANAGEMENT_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft Services\\AdmPwd\\AdmPwdEnabled",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft Services\\AdmPwd\\AdmPwdEnabled",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 197,
+        "routine_name": "UAC_RESTR_LOCAL_ACCOUNTS_NETWORK_LOGON_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\LocalAccountTokenFilterPolicy",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\LocalAccountTokenFilterPolicy",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 198,
+        "routine_name": "SMB_V1_SERVER_CONFIGURE_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters\\SMB1",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters\\SMB1",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 199,
+        "routine_name": "SMB_V1_CLIENT_DRIVER_CONFIGURE_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\MrxSmb10\\Start",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 2,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\MrxSmb10\\Start",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 2,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 200,
+        "routine_name": "SEHOP_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\kernel\\DisableExceptionChainValidation",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\kernel\\DisableExceptionChainValidation",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 201,
+        "routine_name": "WINDOWS_DEFENDER_PROTECTION_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\MpEngine\\MpEnablePus",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false,
+                "version": "10"
+            }
+        ]
+    },
+    {
+        "routine_id": 202,
+        "routine_name": "WDIGEST_AUTH_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\WDigest\\UseLogonCredential",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\WDigest\\UseLogonCredential",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 203,
+        "routine_name": "IP_6_SOURCE_ROUTING_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip6\\Parameters\\DisableIPSourceRouting",
+                "registry_type": 4,
+                "registry_value_good": 2,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip6\\Parameters\\DisableIPSourceRouting",
+                "registry_type": 4,
+                "registry_value_good": 2,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 204,
+        "routine_name": "IP_SOURCE_ROUTING_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\DisableIPSourceRouting",
+                "registry_type": 4,
+                "registry_value_good": 2,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\DisableIPSourceRouting",
+                "registry_type": 4,
+                "registry_value_good": 2,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 205,
+        "routine_name": "ALLOW_ICMP_REDIRECTS_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\EnableICMPRedirect",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\EnableICMPRedirect",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 206,
+        "routine_name": "IGNORE_NETBIOS_NAME_RELEASE_DISABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Netbt\\Parameters\\NoNameReleaseOnDemand",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            },
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Netbt\\Parameters\\NoNameReleaseOnDemand",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": true
+            }
+        ]
+    },
+    {
+        "routine_id": 207,
+        "routine_name": "OFFICE_WORD_11_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\11.0\\Word\\Security\\Level",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 208,
+        "routine_name": "OFFICE_WORD_12_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\12.0\\Word\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 209,
+        "routine_name": "OFFICE_WORD_14_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\14.0\\Word\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 210,
+        "routine_name": "OFFICE_WORD_15_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\15.0\\Word\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 211,
+        "routine_name": "OFFICE_WORD_16_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\16.0\\Word\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 212,
+        "routine_name": "OFFICE_MS_PROJECT_11_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\11.0\\MS Project\\Security\\Level",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 213,
+        "routine_name": "OFFICE_MS_PROJECT_12_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\12.0\\MS Project\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 214,
+        "routine_name": "OFFICE_MS_PROJECT_14_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\14.0\\MS Project\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 215,
+        "routine_name": "OFFICE_MS_PROJECT_15_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\15.0\\MS Project\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 216,
+        "routine_name": "OFFICE_MS_PROJECT_16_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\16.0\\MS Project\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 217,
+        "routine_name": "OFFICE_EXCEL_11_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\11.0\\Excel\\Security\\Level",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 218,
+        "routine_name": "OFFICE_EXCEL_12_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\12.0\\Excel\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 219,
+        "routine_name": "OFFICE_EXCEL_14_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\14.0\\Excel\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 220,
+        "routine_name": "OFFICE_EXCEL_15_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\15.0\\Excel\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 221,
+        "routine_name": "OFFICE_EXCEL_16_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\16.0\\Excel\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 222,
+        "routine_name": "OFFICE_POWER_POINT_11_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\11.0\\PowerPoint\\Security\\Level",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 223,
+        "routine_name": "OFFICE_POWER_POINT_12_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\12.0\\PowerPoint\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 224,
+        "routine_name": "OFFICE_POWER_POINT_14_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\14.0\\PowerPoint\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 225,
+        "routine_name": "OFFICE_POWER_POINT_15_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\15.0\\PowerPoint\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 226,
+        "routine_name": "OFFICE_POWER_POINT_16_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\16.0\\PowerPoint\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 227,
+        "routine_name": "OFFICE_ACCESS_11_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\11.0\\Access\\Security\\Level",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 228,
+        "routine_name": "OFFICE_ACCESS_12_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\12.0\\Access\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 229,
+        "routine_name": "OFFICE_ACCESS_14_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\14.0\\Access\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 230,
+        "routine_name": "OFFICE_ACCESS_15_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\15.0\\Access\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 231,
+        "routine_name": "OFFICE_ACCESS_16_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\16.0\\Access\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 232,
+        "routine_name": "OFFICE_PUBLISHER_11_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\11.0\\Publisher\\Security\\Level",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 233,
+        "routine_name": "OFFICE_PUBLISHER_12_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\12.0\\Publisher\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 234,
+        "routine_name": "OFFICE_PUBLISHER_14_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\14.0\\Publisher\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 235,
+        "routine_name": "OFFICE_PUBLISHER_15_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\15.0\\Publisher\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 236,
+        "routine_name": "OFFICE_PUBLISHER_16_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\16.0\\Publisher\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 237,
+        "routine_name": "OFFICE_OUTLOOK_11_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\11.0\\Outlook\\Security\\Level",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 238,
+        "routine_name": "OFFICE_OUTLOOK_12_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\12.0\\Outlook\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 239,
+        "routine_name": "OFFICE_OUTLOOK_14_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\14.0\\Outlook\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 240,
+        "routine_name": "OFFICE_OUTLOOK_15_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\15.0\\Outlook\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 241,
+        "routine_name": "OFFICE_OUTLOOK_16_MACRO",
+        "rules": [
+            {
+                "registry_path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Office\\16.0\\Outlook\\Security\\VBAWarnings",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 243,
+        "routine_name": "WINRM_SERVICE",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\WinRM\\Start",
+                "registry_type": 4,
+                "registry_value_good": 4,
+                "registry_value_bad": 3,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 244,
+        "routine_name": "ANONYMOUS_SAM_ENUMERATION_AND_SHARES_ENABLED",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\restrictanonymous",
+                "registry_type": 4,
+                "registry_value_good": 1,
+                "registry_value_bad": 0,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 245,
+        "routine_name": "PERMISSION_ANON_USERS",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\EveryoneIncludesAnonymous",
+                "registry_type": 4,
+                "registry_value_good": 0,
+                "registry_value_bad": 1,
+                "server": false
+            }
+        ]
+    },
+    {
+        "routine_id": 246,
+        "routine_name": "POWERSHELL_SCRIPT_EXECUTION",
+        "rules": [
+            {
+                "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\PowerShell\\1\\ShellIds\\Microsoft.PowerShell\\ExecutionPolicy",
+                "registry_type": 2,
+                "registry_value_good": "restricted",
+                "registry_value_bad": "Unrestricted",
+                "server": false
+            }
+        ]
+    }
+]
